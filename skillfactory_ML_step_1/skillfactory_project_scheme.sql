@@ -65,7 +65,8 @@ ALTER TABLE "nobel_prizes" ADD FOREIGN KEY ("prize_name") REFERENCES "prize_assi
 CREATE TABLE "nobel_laureates" (
   /*data from "nobel-laureates" dataset*/
   "laureate_id" int PRIMARY KEY,
-  "laureate_type" varchar,
+  "laureate_type" varchar, /* the value 'organiztaion' for nobel peace prizes in 1973,1979,1989,1991 is wrong
+   and should be changed to 'individual'*/
   "full_name" varchar,
   "sex" varchar,
   "birth_date" date,

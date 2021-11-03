@@ -2,7 +2,8 @@ CREATE TABLE "dataset" (
   "year" int,
   "category" varchar,
   "laureate_id" int,
-  "laureate_type" varchar,
+  "laureate_type" varchar, /* the value 'organiztaion' for nobel peace prizes in 1973,1979,1989,1991 is wrong
+   and should be changed to 'individual'*/
   "motivation" varchar,
   "prize_share" varchar,
   "full_name" varchar,
